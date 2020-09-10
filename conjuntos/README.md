@@ -1,103 +1,163 @@
 ---
 layout: post
 section-type: post
-title: Initial setup
-category: tech
-tags: [ 'tutorial' ]
+title: Programacion - Practica 1 - Operaciones de Conjuntos
+category: Programming
+tags: [ 'Theory' ]
 ---
+Python Program to Illustrate Different Set Operations
 
-All features of { Personal } are controlled by setting values to variables that are defined in the
-\_config.yml file. Let's start with the initial variables that you have to set before
-serving your { Personal } website for the first time.
+  <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
+  <li>2. To understand this example, you should have the knowledge of the following Python programming topics:  </li>
+  <li>3.Python Sets  </li>
+  <li>4. Python Input, Output and Import  </li>
+  <li>Python offers a datatype called set whose elements must be unique. It can be used to perform different set operations like union, intersection, difference and symmetric difference. </li>
+  <li>Is the Quadratic Allocation Problem NP-complete or is it in P? Either give a reduction to show it is NP-complete or give a polytime algorithm to solve it. </li>
 
-### Essential variables
+ 
+</ol>
+Aside: This problem arose during some consulting I was doing, where the integers represented the sizes of different software jobs, and the quadratic term is there because the cost of implementing software goes up faster than linearly with the size of the job. 
+<p></p>
 
-<pre><code data-trim class="yaml">
-# NB! Set your site's url, otherwise stuff will break :)
-
-url: "https://le4ker.github.io"
-
-# If you're hosting your site at a Project repository on GitHub pages
-# (https://yourusername.github.io/repository-name)
-# and NOT your user repository (https://yourusername.github.io)
-# then add in the baseurl here, like this: "/repository-name"
-#
-# NB! Without this *nothing* will work, because it's used in every path :)
-
-baseurl: /personal-jekyll-theme
-</code></pre>
-
-The url and baseurl variables are essential, because they are used *everywhere* where an anchor is defined!
-
-### Coloring
-
-You can define the colors that you want in your { Personal } website by setting
-the following variable sin the /_sass/_variables.scss file:
-
-<pre><code data-trim class="scss">
-// Main color
-$primary-color: #000;
-
-// Anchor color
-$secondary-color: #00cdff;
-
-// Font color
-$font-color: #fff;
-</code></pre>
-
-### HTTPS
-
-By default { Personal } will enforce https by javascript redirection.
-HTTPS is important because it encrypts the data sent between the client and the server.
-If you are hosting on GitHub Pages then it will just work, because your website
-will be piggybacking GitHub's certificate.
-If you are hosting your website in a server that doesn't have a certificate and
-you don't want to issue one, then you can disable this feature by setting the following
-variable to False:
+<p></p>
+Source Code
 
 <pre><code data-trim class="yaml">
-force-https: True
-</code></pre>
+# - 180864-conjuntos.py *- coding: utf-8 -*-
+"""
+Set Section
+# Program to perform different set operations like in mathematics
+"""
+#Find to similar command to other language
+#Rust, F# and Perl
+    
+# define three sets
+ A = set([1,2,3,4,5]) 
+ B = set([3,4,5,6,7]) 
+ C = {}
 
-### HTML Head
+#%%
+#pertenencia
+def pertenencia():
+    A = set([1,2,3,4,5]) 
+    1 in A
+    1 not in A 
+    10 in A 
+    10 not in A 
+    
+#%%
+#Convertir a un conjunto
+def transformarConj():
+    A = (1,2,3)
+    conjuntoA = set (A) # Set() 
+    print("The set is:", conjuntoA)
+    B={1,2,3,4,5}
+    conjuntoB = set (B)
+    print("The set B is : ", conjuntoB)
+    C='Hola mundo'
+    conjuntoC = set (C)
+    print("The set C is :", conjuntoC)
+
+#%%
+#Quitar un elemento al conjunto
+def quitar():
+    A = set([0,1,2,3,4,5]) 
+    A.discard(2)
+    print("The set after to delete: ", A)
+
+#%%
+#Quitar todos los elementos de un conjunto
+def clearSet():
+    A = set([0,1,2,3,4,5]) 
+    A.clear() 
+    print("The set clear: ", A)
+
+#%%
+#Copiar un conjunto
+def copiar():
+    A = set([1,2,3,4,5]) 
+    B=A.copy() 
+    print("Set A = ", A, " compare set B = ", B)
+
+#%%Agregar un elemento
+def agregar():
+    B.add(987) 
+    print("The new set B = ", B) 
+#%%%
+"""
+Set Operations
+"""
+#%%
+#Unión
+def union():
+    A = set([1,2,3,4,5]) 
+    B = set([3,4,5,6,7]) 
+    print("The union = ", A|B) 
+    print("The union = ", A.union(B))
+#%%
+#Interseccion
+def intereseccion():
+    A = set([1,2,3,4,5]) 
+    B = set([3,4,5,6,7]) 
+    print("The intersection = ", A&B)
+    print(A.intersection(B))
+
+#%%
+#Diferencia
+def diferencia():
+    A = set([1,2,3,4,5]) 
+    B = set([3,4,5,6,7]) 
+    print("The diference = ", A-B)
+    print("The intersection = ", A.difference(B))
+
+#%%
+#Diferencia simetrica
+def simetrica():
+    A = set([1,2,3,4,5]) 
+    B = set([3,4,5,6,7]) 
+    C = {}
+    print("The symmetric_difference = ", A^B)
+    
+    print("The symmetric_difference = ",A.symmetric_difference(B))
+    print("The symmetric_difference = ",B.symmetric_difference(A))
+    print("The symmetric_difference = ",A.symmetric_difference(C))
+    print("The symmetric_difference = ",B.symmetric_difference(C))
+
+#%%
+#Subconjunto
+def subconjunto():
+    B = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
+    A = set([1,2,3,4,5]) 
+    print("The subset = ",A.issubset(B) 
+    print("The subset = ",B.issubset(A)
+
+#%%
+#Superconjunto
+def superconjunto():
+    B = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+    A = set([1,2,3,4,5])
+    print("The superset = ",B.issuperset(A)
+    print("The supersrt = ",A.issuperset(B) 
+
+
+
+"""
+Python has lists. The empty list is []. The following is a list of one
+item ["a"] and so is [3]. Here is a list with 3 items ["ball",3.14,-2]. Let's
+define a list, I'll call it lis and we'll do things with it to illustrate
+accessing items in a list. Execute the following cell with Ctrl-Enter.
+"""
+
+</code></pre>
 
 <pre><code data-trim class="yaml">
-lang: "en"
-author: "John Smith"
-title: "{ John Smith }"
-description: "Blog and website of John Smith, blogging mainly for tech. Opinions expressed are mine."
-keywords: "smith, jones, personal, jekyll, theme"
-favicon: "/img/favicon.ico"
-err-404-img: "/img/labtocat.png"
+email: "juancarlos.gonzalez@upslp.edu.mx"
 </code></pre>
 
-The values that you set, will be placed in the head section of every generated HTML page.
+In this program, we take two different sets and perform different set operations on them. This can equivalently done by using set methods.
+<small> <a href="" target="\_blank">@</a> for this feature!</small>
 
-### Google Analytics
 
-The Google tracking code will be placed in every generated page.
-If you don't want Google analytics tracking your website's traffic, set the google-tracking-id to an empty string.
+Visit [https://github.com/upslp-teoriacomputacional/180864/](Programming Set in Python) and you are ready to start hacking around your { Personal } website!
 
-<pre><code data-trim class="yaml">
-google-tracking-id: "UA-35880426-4"
-</code></pre>
-
-### Serving { Personal }
-
-Install the required dependencies:
-
-<pre><code data-trim class="bash">
-gem install jekyll jekyll-paginate jemoji html-proofer
-</code></pre>
-
-Serve the jekyll website:
-
-<pre><code data-trim class="bash">
-./scripts/serve-production
-</code></pre>
-
-That's it!
-
-Visit [http://127.0.0.1:4000](http://127.0.0.1:4000) and you are ready to start hacking around your { Personal } website!
-
-<small>Many thanks to <a href="https://github.com/joariasl" target="\_blank">@joariasl</a> for the language support! </small>
+<small>Many thanks to <a href="https://github.com/jc-gi" target="\_blank">@jc-gi</a> for the language support! </small>
