@@ -9,15 +9,22 @@
 8.	También se puede mostrar el funcionamiento de los programas en los inicios o términos de clase antes de la fecha límite.
 
 
-## Rubrica
----
-Funcionalidad: El programa funciona correctamente y todas las variables de entrada están validadas.
-Razonamiento lógico: Es un código compacto muy depurado.
-Estructuración del código: Si utiliza sangría, espacios e interlineado que dé mayor claridad.
-Documentación: La presentación incluye el nombre, los apellidos, la carrera, nombre del profesor especialidad, nombre de la institución y matrícula, objetivos bien definidos documentados y partes del código bien documentado.
-tags: [ 'Programming' ]
+### Rubrica
 ---
 
+#### Funcionalidad: 
+El programa funciona correctamente y todas las variables de entrada están validadas.
+
+#### Razonamiento lógico: 
+Es un código compacto muy depurado.
+#### Estructuración del código: 
+Si utiliza sangría, espacios e interlineado que dé mayor claridad.
+#### Documentación: 
+La presentación incluye el nombre, los apellidos, la carrera, nombre del profesor especialidad, nombre de la institución y matrícula, objetivos bien definidos documentados y partes del código bien documentado.
+
+---
+<body>
+<small>
 <div id = "content">
    <H1>Writing Clear Code</H1>
 <p><br>
@@ -440,23 +447,14 @@ public static void main(String[] args)
 
 <h4>Q + A</h4>
 
-<p><b>Q.</b> Are there any official coding standards?
-<p><b>A.</b>
-Here are <a href = "codeconventions-150003.pdf">Sun's Code Conventions for the Java Programming Language</a>.
-However, this document was written in 1997 and is no longer being maintained.
-
 <p><b>Q.</b> Any good references on programming style?
 <p><b>A.</b> <a href = "http://www.cs.princeton.edu/~bwk/tpop.webpage">The Practice
 of Programming</a> by Brian W. Kernighan and Rob Pike is a classic.
 
-<p><b>Q.</b> Do Java comments nest?
-<p><b>A.</b> No. So you cannot eliminate a block of code
-by simply surrounding it with the block comment delimiters (since the
-block itself may contain a <tt>*/</tt> delimiter).
 
 <p><b>Q.</b> How can I autoindent my code?
 <p><b>A.</b> Use an editor designed for writing code. For example, if you used our
-Java installer, <em>IntelliJ</em>
+<em>IntelliJ</em>
 will automatically indent and reformat your code when you save it.
 
 <p><b>Q.</b> Are there tools for enforcing coding style?
@@ -513,4 +511,6 @@ comments don't nest, it prints <tt>false</tt>.
 <p></p>
 Don't be afraid of email harvesting, write your email properly and the page will perform programming obfuscation.
 
-<small> <a href="" target="\_blank">@</a> for this feature!</small>
+<a href="" target="\_blank">@</a> 
+</small>
+</body>
