@@ -15,18 +15,28 @@ Aside: This problem arose during some consulting I was doing, where the integers
 ## Source Code example 
 (https://www.geeksforgeeks.org/hello-world-program-in-perl/")
 
-Hello World Program in Perl
-Last Updated: 11-02-2019
+#### Hello World Program in Perl 
+#### (Last Updated: 11-02-2019)
 Perl programming language is exclusively designed for text processing purposes. Its abbreviation denotes Practical Extraction and Report Language. It is compatible on various platforms, such as Windows, Mac OS, and almost all versions of UNIX.
 
 Hello World! program in every programming language gives the beginner programmer a leap in proceeding further in the new language. The basic Hello world program just gives the output by printing ” Hello World!” on the screen. In Perl, a basic program consists of the following steps of execution,
 
-Step 1: Transfer the file to Perl Interpreter:
-Always in Perl, the first line starts with a pair of characters #!. It insists Perl interpreter how the file should be executed. Here, the file should be transferred to Perl interpreter that resides in /usr/bin/perl folder. So, the first line of the program will go this way,
+##### Step 1: Transfer the file to Perl Interpreter:
+Always in Perl, the first line starts with a pair of characters #!. It insists Perl interpreter how the file should be executed. Here, the file should be transferred to Perl interpreter that resides in /usr/bin/perl folder. So, the first line of the program will go this way,)
 
 ```perl
 #!/usr/bin/perl
 ```
+
+##### Step 2: Pragma in Perl:
+A pragma is a specific module in Perl package which has the control over some functions of the compile time or Run time behavior of Perl, which is strict or warnings. So the next two lines go like this,
+```perl
+use strict;
+use warnings;
+```
+#### Step 3: Use of print() function:
+Lastly displaying the output, We use print() function to display a string in perl.
+
 ## Help - ?
 
 In this program, we take two different sets and perform different set operations on them. This can equivalently done by using set methods.
