@@ -1,3 +1,4 @@
+
 ## Python Program to Illustrate Different Set Operations
 
   <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
@@ -13,29 +14,63 @@ Aside: This problem arose during some consulting I was doing, where the integers
 <p></p>
 
 ## Source Code example 
-(https://www.geeksforgeeks.org/hello-world-program-in-perl/)
+https://doc.rust-lang.org/rust-by-example/hello.html
 
-#### Hello World Program in Perl 
-#### (Last Updated: 11-02-2019)
-Perl programming language is exclusively designed for text processing purposes. Its abbreviation denotes Practical Extraction and Report Language. It is compatible on various platforms, such as Windows, Mac OS, and almost all versions of UNIX.
+#### Hello World Program in Rust
+Hello World
+This is the source code of the traditional Hello World program.
+
+##### Scenario
+A simple application written in F# that prints Hello, World! to the console.
 
 Hello World! program in every programming language gives the beginner programmer a leap in proceeding further in the new language. The basic Hello world program just gives the output by printing ” Hello World!” on the screen. In Perl, a basic program consists of the following steps of execution,
 
-##### Step 1: Transfer the file to Perl Interpreter:
-Always in Perl, the first line starts with a pair of characters #!. It insists Perl interpreter how the file should be executed. Here, the file should be transferred to Perl interpreter that resides in /usr/bin/perl folder. So, the first line of the program will go this way,)
+##### Step 1: Transfer the file to Rust Compiler:
+Create your app
+In your command prompt, run the following commands:
 
-```perl
-#!/usr/bin/perl
+```rust
+// This is a comment, and is ignored by the compiler
+// You can test this code by clicking the "Run" button over there ->
+// or if you prefer to use your keyboard, you can use the "Ctrl + Enter" shortcut
+
+// This code is editable, feel free to hack it!
+// You can always return to the original code by clicking the "Reset" button ->
+
+// This is the main function
+fn main() {
+    // Statements here are executed when the compiled binary is called
+
+    // Print text to the console
+    println!("Hello World!");
+}
+
 ```
 
-##### Step 2: Pragma in Perl:
-A pragma is a specific module in Perl package which has the control over some functions of the compile time or Run time behavior of Perl, which is strict or warnings. So the next two lines go like this,
-```perl
-use strict;
-use warnings;
+##### Step 2: Execute in Perl:
+
+println! is a macro that prints text to the console.
+
+A binary can be generated using the Rust compiler: rustc.
+
+```powershell
+rustc hello.rs
+
 ```
-#### Step 3: Use of print() function:
-Lastly displaying the output, We use print() function to display a string in perl.
+rustc will produce a hello binary that can be executed.
+
+```powershell
+$ ./hello
+Hello World!
+```
+
+#### Step 3: Run your app:
+Click 'Run' above to see the expected output. Next, add a new line with a second println! macro so that the output shows:
+
+```powershell
+Hello World!
+I'm a Rustacean!
+```
 
 ## Help - ?
 
