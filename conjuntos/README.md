@@ -1,10 +1,3 @@
----
-layout: post
-section-type: post
-title: Programacion - Practica 1 - Operaciones de Conjuntos
-category: Programming
-tags: [ 'Theory' ]
----
 ## Python Program to Illustrate Different Set Operations
 
   <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
@@ -27,59 +20,42 @@ Aside: This problem arose during some consulting I was doing, where the integers
 """
 Set Section
 # Program to perform different set operations like in mathematics
-"""
 #Find to similar command to other language
 #Rust, F# and Perl
+"""
     
 # define three sets
- A = set([1,2,3,4,5]) 
- B = set([3,4,5,6,7]) 
- C = {}
+global A
+global B
+global C
+
+A = set([1,2,3,4,5]) 
+B = set([3,4,5,6,7]) 
+C = {}
+
+print("The set is:", A)
+print("The set B is : ", B)
+print("The set C is :", C)
 
 #%%
-#pertenencia
-def pertenencia():
-    A = set([1,2,3,4,5]) 
-    1 in A
-    1 not in A 
-    10 in A 
-    10 not in A 
-    
-#%%
-#Convertir a un conjunto
-def transformarConj():
-    A = (1,2,3)
-    conjuntoA = set (A) # Set() 
-    print("The set is:", conjuntoA)
-    B={1,2,3,4,5}
-    conjuntoB = set (B)
-    print("The set B is : ", conjuntoB)
-    C='Hola mundo'
-    conjuntoC = set (C)
-    print("The set C is :", conjuntoC)
-
-#%%
-#Quitar un elemento al conjunto
+#Remove an item from the set
 def quitar():
-    A = set([0,1,2,3,4,5]) 
     A.discard(2)
     print("The set after to delete: ", A)
 
 #%%
-#Quitar todos los elementos de un conjunto
+#Remove all items from the set
 def clearSet():
-    A = set([0,1,2,3,4,5]) 
     A.clear() 
     print("The set clear: ", A)
 
 #%%
-#Copiar un conjunto
+#Copy a set
 def copiar():
-    A = set([1,2,3,4,5]) 
     B=A.copy() 
     print("Set A = ", A, " compare set B = ", B)
 
-#%%Agregar un elemento
+#%%Add an item
 def agregar():
     B.add(987) 
     print("The new set B = ", B) 
@@ -88,73 +64,63 @@ def agregar():
 Set Operations
 """
 #%%
-#Unión
+#Union
 def union():
-    A = set([1,2,3,4,5]) 
-    B = set([3,4,5,6,7]) 
     print("The union = ", A|B) 
     print("The union = ", A.union(B))
 #%%
-#Interseccion
+#Intersection
 def intereseccion():
-    A = set([1,2,3,4,5]) 
-    B = set([3,4,5,6,7]) 
     print("The intersection = ", A&B)
     print(A.intersection(B))
 
 #%%
-#Diferencia
+#Diference
 def diferencia():
-    A = set([1,2,3,4,5]) 
-    B = set([3,4,5,6,7]) 
     print("The diference = ", A-B)
     print("The intersection = ", A.difference(B))
 
 #%%
-#Diferencia simetrica
+#Symmetric difference
 def simetrica():
-    A = set([1,2,3,4,5]) 
-    B = set([3,4,5,6,7]) 
-    C = {}
     print("The symmetric_difference = ", A^B)
-    
     print("The symmetric_difference = ",A.symmetric_difference(B))
     print("The symmetric_difference = ",B.symmetric_difference(A))
     print("The symmetric_difference = ",A.symmetric_difference(C))
     print("The symmetric_difference = ",B.symmetric_difference(C))
 
 #%%
-#Subconjunto
+#Subset
 def subconjunto():
-    B = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) 
-    A = set([1,2,3,4,5]) 
-    print("The subset = ",A.issubset(B) 
-    print("The subset = ",B.issubset(A)
+    print("The subset = ",A.issubset(B))
+    print("The subset = ",B.issubset(A))
 
 #%%
-#Superconjunto
+#Superset
 def superconjunto():
-    B = set([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-    A = set([1,2,3,4,5])
-    print("The superset = ",B.issuperset(A)
-    print("The supersrt = ",A.issuperset(B) 
+    print("The superset = ",B.issuperset(A))
+    print("The supersrt = ",A.issuperset(B)) 
 
 
 
-### 
+"""
+Python has lists. The empty list is []. The following is a list of one
+item ["a"] and so is [3]. Here is a list with 3 items ["ball",3.14,-2]. Let's
+define a list, I'll call it lis and we'll do things with it to illustrate
+accessing items in a list. Execute the following cell with Ctrl-Enter.
+"""
+
+
 ```
 ## Help - ?
-<pre><code data-trim class="yaml">
-email: "juancarlos.gonzalez@upslp.edu.mx"
-</code></pre>
 
 In this program, we take two different sets and perform different set operations on them. This can equivalently done by using set methods.
 <small> <a href="" target="\_blank">@</a> for this feature!</small>
 
 
-Visit <a href="https://github.com/upslp-teoriacomputacional/180864/" target="\_blank"> (Programming Set in Python).
+Visit <a href="https://github.com/upslp-teoriacomputacional/180864/" target="\_blank"> (Programming set in Python).
 
-<small>Questions <a href="https://github.com/jc-gi" target="\_blank">@jc-gi</a> for the language support! </small>
+<small>@jc-gi<a href="https://github.com/jc-gi" target="\_blank"></a> for the language support! </small>
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

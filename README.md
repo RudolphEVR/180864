@@ -1,28 +1,25 @@
-# Instrucciones
-1.	Programar en el lenguaje de programación asignado (F#, Perl, Rust)
-2.	Los programas están ubicados en la carpeta (source_code). 
-3.	El código se debe compilar en cualquier sistema operativo. 
-4.	El código se sube en https://github.com/upslp-teoriacomputacional/matricula 
-5.	Ejemplo. 00180864_conjuntos. go
-6.	El programa se evaluará de acuerdo con la rúbrica que se anexa. 
-7.	Las evidencias del programa desarrollado es la plantilla del código fuente comentado.
-8.	También se puede mostrar el funcionamiento de los programas en los inicios o términos de clase antes de la fecha límite.
+# Instructions
+1. Program in the assigned programming language (F #, Perl, Rust)
+2. The programs are located in the (source_code) folder.
+3. The code must be compiled on any operating system.
+4. The code is uploaded at https://github.com/upslp-teoriacomputacional/matricula
+5. Example. 00180864_sets. go
+6. The program will be evaluated according to the rubric attached.
+7. The evidence of the developed program is the template of the commented source code.
+8. You can also show the operation of the programs in the beginning or term of class before the deadline.
 
-
-### Rubrica
+## Rubric
+---
+#### Functionality:
+The program works correctly and all the input variables are validated.
+#### Logic reasoning:
+It is a very refined compact code.
+#### Code structuring:
+If you use indentation, spaces and line spacing that gives greater clarity.
+#### Documentation:
+The presentation includes the name, surname, major, name of the specialty professor, name of the institution and enrollment, well-defined objectives documented and parts of the well-documented code.
 ---
 
-#### Funcionalidad: 
-El programa funciona correctamente y todas las variables de entrada están validadas.
-
-#### Razonamiento lógico: 
-Es un código compacto muy depurado.
-#### Estructuración del código: 
-Si utiliza sangría, espacios e interlineado que dé mayor claridad.
-#### Documentación: 
-La presentación incluye el nombre, los apellidos, la carrera, nombre del profesor especialidad, nombre de la institución y matrícula, objetivos bien definidos documentados y partes del código bien documentado.
-
----
 ### Help -?
 #### <li><em>Programming Languages doc comments.</em>
 
@@ -154,12 +151,12 @@ public static void main(String[] args)
 of Programming</a> by Brian W. Kernighan and Rob Pike is a classic.
 
 
-<p><b>A.</b> Yes, we recommend <a href = "http://checkstyle.sourceforge.net/">Checkstyle</a>.
+<p><b>A.</b><a href = "http://checkstyle.sourceforge.net/">Checkstyle</a>.
 If you followed our Windows, Mac OS X, or Linux instructions, <em>IntelliJ</em> is configured
 to run Checkstyle automatically while you are editing.
 
 
-<p><a href = "http://mindprod.com/jgloss/unmain.html">unmaintainable code</a>
+<p><b>A.</b><a href = "http://mindprod.com/jgloss/unmain.html">unmaintainable code</a>
 and here's <a href = "http://archive.is/Pn5hH">another</a>.
 
 
