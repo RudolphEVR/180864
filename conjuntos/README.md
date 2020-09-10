@@ -5,7 +5,7 @@ title: Programacion - Practica 1 - Operaciones de Conjuntos
 category: Programming
 tags: [ 'Theory' ]
 ---
-Python Program to Illustrate Different Set Operations
+## Python Program to Illustrate Different Set Operations
 
   <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
   <li>2. To understand this example, you should have the knowledge of the following Python programming topics:  </li>
@@ -19,10 +19,10 @@ Python Program to Illustrate Different Set Operations
 Aside: This problem arose during some consulting I was doing, where the integers represented the sizes of different software jobs, and the quadratic term is there because the cost of implementing software goes up faster than linearly with the size of the job. 
 <p></p>
 
-<p></p>
-Source Code
+## Source Code
 
-<pre><code data-trim class="yaml">
+```python
+
 # - 180864-conjuntos.py *- coding: utf-8 -*-
 """
 Set Section
@@ -141,15 +141,9 @@ def superconjunto():
 
 
 
-"""
-Python has lists. The empty list is []. The following is a list of one
-item ["a"] and so is [3]. Here is a list with 3 items ["ball",3.14,-2]. Let's
-define a list, I'll call it lis and we'll do things with it to illustrate
-accessing items in a list. Execute the following cell with Ctrl-Enter.
-"""
-
-</code></pre>
-
+### 
+```
+## Help - ?
 <pre><code data-trim class="yaml">
 email: "juancarlos.gonzalez@upslp.edu.mx"
 </code></pre>
@@ -158,6 +152,14 @@ In this program, we take two different sets and perform different set operations
 <small> <a href="" target="\_blank">@</a> for this feature!</small>
 
 
-Visit [https://github.com/upslp-teoriacomputacional/180864/](Programming Set in Python) and you are ready to start hacking around your { Personal } website!
+Visit <a href="https://github.com/upslp-teoriacomputacional/180864/" target="\_blank"> (Programming Set in Python).
 
-<small>Many thanks to <a href="https://github.com/jc-gi" target="\_blank">@jc-gi</a> for the language support! </small>
+<small>Questions <a href="https://github.com/jc-gi" target="\_blank">@jc-gi</a> for the language support! </small>
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
