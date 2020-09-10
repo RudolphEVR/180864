@@ -1,24 +1,3 @@
-<!-- begin snippet: ... -->
-
-    Contenido precedido del lenguaje al que pertenece...
-
-<!-- language: lang-js -->
-
-    Contenido JavaScript...
-
-<!-- language: lang-css -->
-
-    Contenido CSS...
-
-<!-- language: lang-html -->
-
-    Contenido HTML...
-
-     Y al final...
-
-<!-- end snippet -->
-
-
 ## Python Program to Illustrate Different Set Operations
 
   <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
