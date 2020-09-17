@@ -1,121 +1,65 @@
 ## Python Program to Illustrate Different Set Operations
 
-  <li>1. In this example, we have defined two set variables and we have performed different set operations: union, intersection, difference and symmetric difference.,  </li>
-  <li>2. To understand this example, you should have the knowledge of the following Python programming topics:  </li>
-  <li>3.Python Sets  </li>
-  <li>4. Python Input, Output and Import  </li>
-  <li>Python offers a datatype called set whose elements must be unique. It can be used to perform different set operations like union, intersection, difference and symmetric difference. </li>
-  <li>Is the Quadratic Allocation Problem NP-complete or is it in P? Either give a reduction to show it is NP-complete or give a polytime algorithm to solve it. </li>
+  <li>Los tres operadores lógicos básicos son O, Y y NO, representados en Python por or, and y not, respectivamente.
+
+Podemos incluir también el O EXCLUSIVO, que es verdadero cuando uno y solo uno de los operandos lo es, pero estrictamente debes saber que se deriva a partir de los tres básicos. Su representación es ^, el sombrero o caret.
+
+Como ejercicio práctico, vamos a realizar un programa que construya las tablas de verdad correspondientes.
+"""</li>
 
  
 </ol>
-Aside: This problem arose during some consulting I was doing, where the integers represented the sizes of different software jobs, and the quadratic term is there because the cost of implementing software goes up faster than linearly with the size of the job. 
+La variable x recorrerá la lista booleanos, tomando en la primera iteración el valor False y en la siguiente True. 
+Pero, por cada iteración, aparece una nueva variable y que también recorrerá booleanos de izquierda a derecha. 
+Así garantizamos que se alcanzan las cuatro combinaciones posibles de x e y.
+
+En la impresión con print, hemos empleado el argumento sep = ‘t’ para que separe cada elemento mediante un tabulador, 
+en lugar de usar un espacio en blanco, valor por omisión. Aprecia el uso de la expresión x or y para que muestre el resultado del or.
+
+El resto de las tablas se calcula del mismo modo, simplemente teniendo en cuenta que hay que emplear, naturalmente, 
+la expresión lógica adecuada.
+
+Debes saber que los operadores lógicos de Python son del tipo cortocircuitados, término que quizás te resulte familiar 
+si conoces otros lenguajes de programación. Esto significa que, si a partir del primer operando ya se puede deducir el 
+resultado final, Python ni se molestará en evaluar el segundo, con el consiguiente ahorro de tiempo.
+
+En un or, si el primer operando es verdadero, sabemos que el resultado lo será ya, por lo que no es necesario que Python 
+se moleste en comprobar la veracidad del segundo.
+
+Del mismo modo, en un and, si el primer operando es falso, el resultado inmediatamente lo será y tampoco será necesario 
+saber lo que ocurre con el segundo.
+
+Para finalizar, una pequeña advertencia: es un error común confundir los operadores lógicos (or y and) con los operadores 
+de unión e intersección de conjuntos (| y &).
 <p></p>
 
 ## Source Code
 
 ```python
 
-# - 180864-conjuntos.py *- coding: utf-8 -*-
-"""
-Set Section
-# Program to perform different set operations like in mathematics
-#Find to similar command to other language
-#Rust, F# and Perl
-"""
-    
-# define three sets
-global A
-global B
-global C
+# Comenzamos creando una lista con los dos posibles valores booleanos, False y True, 
+# que utilizaremos para iterar sobre ellos:
+booleanos = [False, True]
+#Observa que no hemos rodeado los elementos entre comillas, pues no son strings.
+#A continuación imprimimos los títulos para la operación or:
 
-A = set([1,2,3,4,5]) 
-B = set([3,4,5,6,7]) 
-C = {}
+# Tabla de verdad de or
 
-print("The set is:", A)
-print("The set B is : ", B)
-print("The set C is :", C)
+# Los \t en la primera línea no son más que tabuladores. La extraña operación de la segunda, 
+# multiplicando un string por un número, no hace más que repetir 22 veces el carácter ‘-‘.
+print('x\ty\tx or y')
+print('-'*22)
 
-#%%
-#Remove an item from the set
-def quitar():
-    A.discard(2)
-    print("The set after to delete: ", A)
-
-#%%
-#Remove all items from the set
-def clearSet():
-    A.clear() 
-    print("The set clear: ", A)
-
-#%%
-#Copy a set
-def copiar():
-    B=A.copy() 
-    print("Set A = ", A, " compare set B = ", B)
-
-#%%Add an item
-def agregar():
-    B.add(987) 
-    print("The new set B = ", B) 
-#%%%
-"""
-Set Operations
-"""
-#%%
-#Union
-def union():
-    print("The union = ", A|B) 
-    print("The union = ", A.union(B))
-#%%
-#Intersection
-def intereseccion():
-    print("The intersection = ", A&B)
-    print(A.intersection(B))
-
-#%%
-#Diference
-def diferencia():
-    print("The diference = ", A-B)
-    print("The intersection = ", A.difference(B))
-
-#%%
-#Symmetric difference
-def simetrica():
-    print("The symmetric_difference = ", A^B)
-    print("The symmetric_difference = ",A.symmetric_difference(B))
-    print("The symmetric_difference = ",B.symmetric_difference(A))
-    print("The symmetric_difference = ",A.symmetric_difference(C))
-    print("The symmetric_difference = ",B.symmetric_difference(C))
-
-#%%
-#Subset
-def subconjunto():
-    print("The subset = ",A.issubset(B))
-    print("The subset = ",B.issubset(A))
-
-#%%
-#Superset
-def superconjunto():
-    print("The superset = ",B.issuperset(A))
-    print("The supersrt = ",A.issuperset(B)) 
-
-
-
-"""
-Python has lists. The empty list is []. The following is a list of one
-item ["a"] and so is [3]. Here is a list with 3 items ["ball",3.14,-2]. Let's
-define a list, I'll call it lis and we'll do things with it to illustrate
-accessing items in a list. Execute the following cell with Ctrl-Enter.
-"""
-
+# El quid de la cuestión recae en la doble iteración usando el bucle for: 
+for x in booleanos:
+    for y in booleanos:
+        print(x, y, x or y, sep = '\t')
 
 ```
 ## Help - ?
 
-In this program, we take two different sets and perform different set operations on them. This can equivalently done by using set methods.
-<small> <a href="" target="\_blank">@</a> for this feature!</small>
+
+<small> <a href="" target="\_blank"></a> </small>
 
 
 Visit <a href="https://github.com/upslp-teoriacomputacional/180864/" target="\_blank"> (Programming set in Python).
